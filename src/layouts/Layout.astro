@@ -7,7 +7,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -16,36 +16,35 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="h-full w-full">
+		<menu class=" relative w-full h-16"> 
+			<nav class="bg-[color:var(--primary-color)] w-full h-16 fixed">
+				<ul class="flex w-full  justify-around items-center h-full">
+					<a href=""><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Opcion 5</li></a>
+					<a href=""><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Opcion 5</li></a>
+					<a href=""><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Opcion 5</li></a>
+					<a href=""><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Opcion 5</li></a>
+					<a href=""><li class="bg-white  px-3 pb-1 rounded-2xl text-[color:var(--primary-color)] font-bold text-xl hover:bg-[color:var(--dawn-color)] ">Opcion diferente</li></a>
+				</ul>
+			</nav>
+		</menu>
+
 		<slot />
+
+		<footer class="bg-white h-52 w-full">
+
+		</footer>
 	</body>
 </html>
 <style is:global>
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+		--primary-color:#1a3d5d;
+		--secundary-color:#3caa80;
+		--dawn-color:#fad07a;
 	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
+	html{
+		height: 100%;
+		height: 100%;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+
 </style>
