@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import InputList from '../components/InputList.astro';
 ---
 
 <Layout title="AGPRICE">
@@ -30,13 +30,24 @@ import Card from '../components/Card.astro';
 		<h1 class="text-6xl font-extrabold">HOLA</h1>
 	</section>
 	<section class=" bg-[color:var(--secundary-color)] w-full h-screen">
-		<input id="value_desired" type="text">
-		<button id="button">click</button>
+		<div class="flex h-8">
+			<label for="">PRODUCTO</label>
+			<select id="producto" name="estado">
+				<option  class="producto" value=0 >CEBOLLA CABEZONA ROJA</option>
+				<option class="producto" value="1">FRIJOL VERDE</option>
+				<option class="producto" value="2">TOMATE CHONTO</option>
+				<option class="producto" value="3">MAZORCA</option>
+				<option class="producto" value="4">PIMENTON</option>
+			</select>
+			<input id="value_desired" type="text" placeholder="precio deseado">
+			<button id="button">click</button>
+		</div>
+
 	</section>
 
 
 
-	<script src="../../js/aplication.js"></script>
+	<script src="../../js/aplication.js" type="module"></script>
 </Layout>
 
 
