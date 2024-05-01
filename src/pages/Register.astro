@@ -1,0 +1,48 @@
+---
+import User from "../components/icons/User.astro";
+import Correo from "../components/icons/Correo.astro";
+import Password from "../components/icons/Password.astro";
+
+---
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>AGPRICE</title>
+	</head>
+	<body class="h-full w-full flex justify-center items-center bg-[color:var(--primary-color)]">
+        <div class="w-[240px] bg-transparent text-[color:var(--third-color)]">
+            <form action="" class="">
+                <h1 class="text-[40px] text-center">Registrarse</h1>
+                <div class="w-full h-50px mt-[30px] ">
+                    <input type="text" placeholder="Nombre" required class="flex w-full h-full bg-transparent border-none outline-none border-[40px] size-[16px] text-[color:var(--third-color)] pt-[20px] pb-[45px] pr-[20px] pl-[20px] placeholder: text-white">
+                    <User class="mr-6 size-5"/>
+                </div>
+                <div class="w-full h-50px mt-[30px] ">
+                    <input type="email" placeholder="Correo Electrónico" required class="flex w-full h-full bg-transparent border-none outline-none border-[40px] size-[16px] text-[color:var(--third-color)] pt-[20px] pb-[45px] pr-[20px] pl-[20px] placeholder: text-white">
+                    <Correo class="mr-6 size-5"/>
+                </div>
+                <div class="w-full h-50px mt-[30px] ">
+                    <input type="password" placeholder="Contraseña" required class="flex w-full h-full bg-transparent border-none outline-none border-[40px] size-[16px] text-[color:var(--third-color)] pt-[20px] pb-[45px] pr-[20px] pl-[20px] placeholder: text-white">
+                    <Password class="mr-6 size-5"/>
+                </div>
+                <button type="submit" id="button" class="w-full h-45px bg-black border-none outline-none border-[40px] shadow-[color:var(--primary-color)] cursor-pointer text-xl text-[color:var(--third-color)] hover:text-[color:var(--primary-color)] bg-[color:var(--third-color)]" >Registrarse</button>
+                <div class="size[14.5px] text-center mt-[20px] mr-[15px] ">
+                    <p class="text-[color:var(--third-color)] p-2 no-underline hover:underline">¿Ya tienes una cuenta? <a href="">Iniciar Sesión</a></p>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+<style is:global>
+	:root {
+		--primary-color:#1a3d5d;
+		--secundary-color:#4cbc9a;
+		--third-color:rgba(244, 244, 244, 0.859) ;
+		--dawn-color:#fad07a;
+	}
+</style>
