@@ -10,11 +10,10 @@ const options = {
         "Accept": "application/json"
     }
 }
-
-
     const value_desired = document.querySelector("#value_desired");
     const button = document.querySelector("#button");
     const PRODUCT = document.querySelector("#producto"); 
+    
 
 
     localStorage.setItem("alert_reload", false)
@@ -26,10 +25,11 @@ const options = {
             let myJson = localStorage.getItem("myJson");
             console.log("funcionando reload alter")
             if(index_product != undefined){
-                 if(myJson[index_product].price >= value ){
+                 if(myJson[index_product].price *1000 >= value ){
                      console.log("entro")
                      alert("price")
                      value_desired.value = "";
+
                  }
                  else {
                      value_desired.value = value;
@@ -69,7 +69,7 @@ const options = {
             localStorage.setItem("value_desired", value_desired.value);
             console.log(value_desired.value)
             console.log(myJson[index_product].price)
-            if(myJson[index_product].price >= value_desired.value ){
+            if(myJson[index_product].price *1000 >= value_desired.value ){
                
                 alert("price")
                 value_desired.value = "";
@@ -79,6 +79,11 @@ const options = {
                 console.log("entro")
             }
         });
+
+//      Funcionalidad para mostrar los precios
+            myJson[0].name = document.querySelector('#name').innerHTML;
+            myJson[0].price = document.querySelector('#price').innerHTML;
+            myJson[0].location = document.querySelector('#ciudad').innerHTML;
 
 
         
