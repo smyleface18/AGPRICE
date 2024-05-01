@@ -12,6 +12,8 @@ const options = {
 }
 
 
+    //funcionalidad de alert cuando el usuario vuelva a entrar
+
     const value_desired = document.querySelector("#value_desired");
     const button = document.querySelector("#button");
     const PRODUCT = document.querySelector("#producto"); 
