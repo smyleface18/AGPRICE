@@ -5,7 +5,7 @@ import InputList from '../components/InputList.astro';
 
 <Layout title="AGPRICE">
 
-	<section class="bg-[color:var(--primary-color)] h-screen w-full flex items-center ">
+	<section class="bg-[color:var(--primary-color)] h-screen w-full flex items-center " id="inicio">
 		<section class=" w-full h-96 flex justify-center items-center">
 			<div class="h-full w-72 flex flex-col  mr-3 justify-center items-center">
 				<img class="w-[70%]" src="../../Logo.png" alt="">
@@ -29,19 +29,45 @@ import InputList from '../components/InputList.astro';
 	<section class=" bg-white w-full h-screen text-[color:var(--primary-color)] ">
 		<h1 class="text-6xl font-extrabold">HOLA</h1>
 	</section>
-	<section class=" bg-[color:var(--secundary-color)] w-full h-screen">
-		<div class="flex h-8">
-			<label for="">PRODUCTO</label>
-			<select id="producto" name="estado">
-				<option  class="producto" value=0 >CEBOLLA CABEZONA ROJA</option>
-				<option class="producto" value="1">FRIJOL VERDE</option>
-				<option class="producto" value="2">TOMATE CHONTO</option>
-				<option class="producto" value="3">MAZORCA</option>
-				<option class="producto" value="4">PIMENTON</option>
-			</select>
+	<section class=" bg-[color:var(--primary-color)] w-full h-screen " id="prices">
+	<div class="flex flex-row justify-between space-x-2 mx-3 mt-2">
+		<div class="h-[300px] w-[300px] bg-white flex shadow flex-col">
+			<img src="https://www.webshopcolombia.com/72-large_default/cebolla-cabezona-roja.jpg" alt="Imagen de cebolla" class="w-[200px] h-[150px] object-cover ml-[50px]">
+			<p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name">Cebolla Cabezona Roja</p>
+			<p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price">$4500 X Lb</p>
+			<p class="font-bold text-black mt-3 text-xl text-center" id="ciudad">Bogotá</p>
+		</div>
+		<div class="h-[300px] w-[300px] bg-white flex shadow flex-col ml-2">
+			<img src="https://www.webshopcolombia.com/72-large_default/cebolla-cabezona-roja.jpg" alt="Imagen de cebolla" class="w-[200px] h-[150px] object-cover ml-[50px]">
+			<p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name">Cebolla Cabezona Roja</p>
+			<p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price">$4500 X Lb</p>
+			<p class="font-bold text-black mt-3 text-xl text-center" id="ciudad">Bogotá</p>
+		</div>
+		<div class="h-[300px] w-[300px] bg-white flex shadow flex-col ml-2">
+			<img src="https://www.webshopcolombia.com/72-large_default/cebolla-cabezona-roja.jpg" alt="Imagen de cebolla" class="w-[200px] h-[150px] object-cover ml-[50px]">
+			<p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name">Cebolla Cabezona Roja</p>
+			<p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price">$4500 X Lb</p>
+			<p class="font-bold text-black mt-3 text-xl text-center" id="ciudad">Bogotá</p>
+		</div>
+		<div class="h-[300px] w-[300px] bg-white flex shadow flex-col ml-2">
+			<img src="https://www.webshopcolombia.com/72-large_default/cebolla-cabezona-roja.jpg" alt="Imagen de cebolla" class="w-[200px] h-[150px] object-cover ml-[50px]">
+			<p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name">Cebolla Cabezona Roja</p>
+			<p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price">$4500 X Lb</p>
+			<p class="font-bold text-black mt-3 text-xl text-center" id="ciudad">Bogotá</p>
+		</div>
+	</div>
+			<div class="flex h-8 mt-10">
+				<label for="">PRODUCTO</label>
+				<select id="producto" name="estado">
+					<option  class="producto" value=0 >CEBOLLA CABEZONA ROJA</option>
+					<option class="producto" value="1">FRIJOL VERDE</option>
+					<option class="producto" value="2">TOMATE CHONTO</option>
+					<option class="producto" value="3">MAZORCA</option>
+					<option class="producto" value="4">PIMENTON</option>
+				</select>
 			<input id="value_desired" type="text" placeholder="precio deseado">
 			<button id="button">click</button>
-		</div>
+			</div>
 
 	</section>
 
