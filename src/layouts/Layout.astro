@@ -24,18 +24,18 @@ const { title } = Astro.props;
 		<menu class=" relative w-full h-16"> 
 			<nav class="bg-[color:var(--primary-color)] w-full h-16 fixed">
 				<ul class="flex w-full  justify-around items-center h-full">
-					<a href=""><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Opcion 5</li></a>
-					<a href=""><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Opcion 5</li></a>
-					<a href=""><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Opcion 5</li></a>
-					<a href=""><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Opcion 5</li></a>
-					<a href=""><li class="bg-white  px-3 pb-1 rounded-2xl text-[color:var(--primary-color)] font-bold text-xl hover:bg-[color:var(--dawn-color)]">Opcion diferente</li></a>
+					<a href="#inicio"><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Inicio</li></a>
+					<a href="#prices"><li class=" px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]  ">Prices</li></a>
+					<a href=""><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Tendecias</li></a>
+					<a href="#contacto"><li class="  px-3 pb-1 rounded-2xl text-white font-bold text-xl hover:text-[color:var(--dawn-color)]   ">Contacto</li></a>
+					<a href="/src/pages/Register.astro"><li class="bg-white  px-3 pb-1 rounded-2xl text-[color:var(--primary-color)] font-bold text-xl hover:bg-[color:var(--dawn-color)]">Registrarse</li></a>
 				</ul>
 			</nav>
 		</menu>
 
 		<slot />
 
-		<footer class="w-full flex justify-center pt-7 bg-[color:var(--third-color)]">
+		<footer class="w-full flex justify-center pt-7 bg-[color:var(--third-color)]" id="contacto">
 			<div class="text-[color:var(--primary-color)]  h-auto  flex flex-col w-full ">
 					<h3 class=" flex text-2xl justify-center font-bold">Ínformate sobre Nosotros</h3>
 					<div class="flex flex-row justify-center mt-4 space-x-10">
