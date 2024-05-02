@@ -25,52 +25,53 @@ import InputList from '../components/InputList.astro';
 			</div>
 		</section>
 	</section>
-	<section class=" bg-white- w-full h-screen mt-5 pt-5" id="prices">
+	<section class=" bg-white- w-full h-screen mt-5 pt-5 mb-2" id="prices">
 	<div class="flex flex-row justify-between space-x-2 mx-3 mt-2">
-		<div class="h-[300px] w-[300px] bg-white flex shadow flex-col rounded-lg">
+		<div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
 			<img src="https://www.webshopcolombia.com/72-large_default/cebolla-cabezona-roja.jpg" alt="Imagen de cebolla" class="w-[200px] h-[150px] object-cover mx-[20px]">
 			<p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
 			<p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
 			<p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
 		</div>
-		<div class="h-[300px] w-[300px] bg-white flex shadow flex-col rounded-lg">
+		<div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
 			<img src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/194493/2080.jpg?v=637814055277670000" alt="Imagen de Fríjol" class="w-[200px] h-[150px] object-cover mx-[20px]">
 			<p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
 			<p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
 			<p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
 		</div>
-		<div class="h-[300px] w-[300px] bg-white flex shadow flex-col rounded-lg">
+		<div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
 			<img src="https://www.mercadoscampesinos.gov.co/wp-content/uploads/2021/04/TOMATE-CHONTO.jpg" alt="Imagen de Tomate Chonto" class="w-[200px] h-[150px] object-cover mx-[20px]">
 			<p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
 			<p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
 			<p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
 		</div>
-		<div class="h-[300px] w-[300px] bg-white flex shadow flex-col rounded-lg">
+		<div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
 			<img src="https://www.fruvext.com.co/wp-content/uploads/2021/06/mazorca.jpg" alt="Imagen de Mazorca" class="w-[200px] h-[150px] object-cover mx-[20px]">
 			<p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
 			<p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
 			<p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
 		</div>
-		<div class="h-[300px] w-[300px] bg-white flex shadow flex-col rounded-lg">
+		<div class="h-[300px] w-[250px] bg-white flex shadow flex-col rounded-lg">
 			<img src="https://frutiq.com.co/cdn/shop/files/shutterstock_247015708.jpg?v=1684289414" alt="Imagen de Pimentón" class="w-[200px] h-[150px] object-cover mx-[20px]">
 			<p class="font-bold text-center text-[color:var(--primary-color)] mt-3 text-xl" id="name"></p>
 			<p class="font-bold text-lime-600 mt-3 text-xl text-center" id="price"></p>
 			<p class="font-bold text-black mt-3 text-xl text-center" id="ciudad"></p>
 		</div>
 	</div>
-	<div class="w-screen flex justify-center h-10" >
-		<h4>INGRESA EL PRODUCTO Y PRECIO QUE DESEAS PARA QUE TE PODAMOS NOTIFICAR CUANDO TU PRODUCTO DESEADO LLEGUE AL PRECIO QUE DESAS</h4>
-		<div class="flex h-8 mt-10" >
-			<label for="">PRODUCTO</label>
-			<select id="producto" name="estado">
+	<div class="w-screen flex justify-center h-auto " >
+		<div class="flex h-8 mt-10 flex-col space-y-3 rounded-lg shadow  bg-blue-300/80 ">
+			<label class="text-center font-bold text-[color:var(--primary-color)] bg-[color:var(--third-color)] p-2" for="">PRODUCTO</label>
+			<select id="producto" name="estado" class="rounded-lg shadow bg-transparent p-3">
 				<option  class="producto" value=0 >CEBOLLA CABEZONA ROJA</option>
 				<option class="producto" value="1">FRIJOL VERDE</option>
 				<option class="producto" value="2">TOMATE CHONTO</option>
 				<option class="producto" value="3">MAZORCA</option>
 				<option class="producto" value="4">PIMENTON</option>
 			</select>
-			<input id="value_desired" type="text" placeholder="precio deseado">
-			<button id="button">click</button>
+			<input id="value_desired" type="text" placeholder="Precio Deseado" class="rounded-lg border p-1">
+			<input id="email" type="email" placeholder="Correo Electrónico" class="rounded-lg border p-1">
+
+			<button id="button" class="w-auto h-auto p-2 font-bold text-[color:var(--primary-color)] bg-[color:var(--third-color)] shadow rounded-lg">CLICK</button>
 		</div>
 
 
