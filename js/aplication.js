@@ -85,9 +85,26 @@ const options = {
         });
 
 //      Funcionalidad para mostrar los precios
-            myJson[0].name = document.querySelector('#name').innerHTML;
-            myJson[0].price = document.querySelector('#price').innerHTML;
-            myJson[0].location = document.querySelector('#ciudad').innerHTML;
+
+            const nameCards = [...document.querySelectorAll('#name')];
+                for (let index = 0; index < nameCards.length; index++) {
+                    const element = nameCards[index];
+                    element.innerHTML= myJson[index].name
+                }
+
+            const priceCards = [...document.querySelectorAll('#price')];
+                for (let index = 0; index < priceCards.length; index++) {
+                    const element = priceCards[index];
+                    element.innerHTML= "$"+myJson[index].price*1000+" X Kilo"
+                }
+
+            const locationCards = [...document.querySelectorAll('#ciudad')];
+                for (let index = 0; index < locationCards.length; index++) {
+                    const element = locationCards[index];
+                    element.innerHTML= myJson[index].location
+                }
+
+                
 
 
         
